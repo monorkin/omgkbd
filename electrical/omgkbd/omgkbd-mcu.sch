@@ -145,7 +145,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 3
+Sheet 2 3
 Title "Jellyfish"
 Date "2017-10-29"
 Rev "1"
@@ -155,16 +155,47 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 800  850  1350 1150
-U 59F6280A
-F0 "mcu" 60
-F1 "omgkbd-mcu.sch" 60
-$EndSheet
-$Sheet
-S 800  2450 1350 1100
-U 59F8CCCC
-F0 "omgkbd-switches" 60
-F1 "omgkbd-switches.sch" 60
-$EndSheet
+$Comp
+L STM32F303ZETx U1
+U 1 1 59F23773
+P 8300 5150
+F 0 "U1" H 8250 9400 50  0000 C CNN
+F 1 "STM32F303ZETx" H 8250 9300 50  0000 C CNN
+F 2 "Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm" H 13500 8725 50  0001 R TNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/2c/6f/d7/64/1f/a3/4f/c9/DM00118585.pdf/files/DM00118585.pdf/jcr:content/translations/en.DM00118585.pdf" H 8300 5150 50  0001 C CNN
+	1    8300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59F628DB
+P 8200 9100
+F 0 "#PWR?" H 8200 8850 50  0001 C CNN
+F 1 "GND" H 8205 8927 50  0000 C CNN
+F 2 "" H 8200 9100 50  0001 C CNN
+F 3 "" H 8200 9100 50  0001 C CNN
+	1    8200 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 8950 8800 8950
+Wire Wire Line
+	8200 9100 8200 8950
+Connection ~ 8200 8950
+Wire Wire Line
+	8800 1350 7700 1350
+$Comp
+L VCC #PWR?
+U 1 1 59F62963
+P 8250 1300
+F 0 "#PWR?" H 8250 1150 50  0001 C CNN
+F 1 "VCC" H 8267 1473 50  0000 C CNN
+F 2 "" H 8250 1300 50  0001 C CNN
+F 3 "" H 8250 1300 50  0001 C CNN
+	1    8250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1300 8250 1350
+Connection ~ 8250 1350
 $EndSCHEMATC
