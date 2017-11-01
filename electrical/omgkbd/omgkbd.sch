@@ -145,7 +145,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Jellyfish"
 Date "2017-10-29"
 Rev "1"
@@ -166,6 +166,7 @@ S 800  2450 1350 1100
 U 59F8CCCC
 F0 "omgkbd-switches" 60
 F1 "omgkbd-switches.sch" 60
+F2 "SWITCHES" O R 2150 2950 60 
 $EndSheet
 $Sheet
 S 800  3775 1350 950 
@@ -180,5 +181,11 @@ U 59FEE9F5
 F0 "omgkbd-ambient" 60
 F1 "omgkbd-ambient.sch" 60
 F2 "AMBIENT_CTRL" I R 2150 5425 60 
+$EndSheet
+$Sheet
+S 800  6025 1375 750 
+U 5A035936
+F0 "omgkbd-pwr" 60
+F1 "omgkbd-pwr.sch" 60
 $EndSheet
 $EndSCHEMATC

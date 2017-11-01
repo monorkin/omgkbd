@@ -145,7 +145,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date "2017-11-01"
 Rev ""
@@ -1706,13 +1706,14 @@ F 3 "" H 3625 2875 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 3625 2875
-Connection ~ 2575 1900
+Text Notes 2700 9375 0    118  ~ 0
+34 LEDS = 34 x 60mA = 2,040mA
 $Comp
-L +5P #PWR?
-U 1 1 5A00BFE3
+L +5V #PWR?
+U 1 1 5A03809A
 P 2575 1900
 F 0 "#PWR?" H 2575 1750 50  0001 C CNN
-F 1 "+5P" H 2590 2073 50  0000 C CNN
+F 1 "+5V" H 2590 2073 50  0000 C CNN
 F 2 "" H 2575 1900 50  0001 C CNN
 F 3 "" H 2575 1900 50  0001 C CNN
 	1    2575 1900
